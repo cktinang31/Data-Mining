@@ -41,6 +41,6 @@ for label, score in zip(res['labels'], res['scores']):
     print(f"{label}: {score:.4f}")
     
 if field_of_study.lower() in job_description.lower():
-    print(f"The job is related to the field of study ({field_of_study}).")
-else:
     print(f"The job is not directly related to the field of study ({field_of_study}).")
+else:
+    print(f"The job is  related to the field of study ({field_of_study}).")
