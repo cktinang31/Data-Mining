@@ -35,7 +35,6 @@ possible_labels = ["Software Engineer", "Data Scientist", "Project Manager"]
 
 res = classifier(job_description, possible_labels)
 
-
 print("Classification results:")
 for label, score in zip(res['labels'], res['scores']):
     print(f"{label}: {score:.4f}")
